@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AgriSence Weather</string>
+    <string name="preference_file_key">com.tahahamdan.develop4android.agrisenceweather.MyWeatherPrefs</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_my_preferences">Preferences</string>
+        <!-- AdMob ad unit IDs -->
+    <string name="banner_ad">ca-app-pub-1234</string>
+</resources>

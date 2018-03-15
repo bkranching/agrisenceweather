@@ -1,0 +1,102 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MyMaterialTheme" parent="MyMaterialTheme.Base">
+
+    </style>
+
+    <style name="MyMaterialTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MyMaterialTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="MyMaterialTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="infoImage">
+        <item name="android:layout_width">@dimen/InfoIconSize</item>
+        <item name="android:layout_height">@dimen/InfoIconSize</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="InfoText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:textSize">@dimen/InfoTextSize</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+
+
+    <style name="FragmentMainLayout">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+         <item name="android:padding">15dp</item>
+        <item name="android:background">@color/fragmentBgColor</item>
+    </style>
+
+    <style name="TitleText">
+        <item name="android:textSize">@dimen/TitleTextSize</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingRight">@dimen/TitleTextPadding</item>
+        <item name="android:paddingBottom">@dimen/TitleTextPadding</item>
+        <item name="android:paddingTop">@dimen/TitleTextPadding</item>
+
+
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">#FFFFFF</item>
+        <item name="android:typeface">normal</item>
+    </style>
+
+    <style name="SubText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textSize">@dimen/SubTextSize</item>
+        <item name="android:layout_marginTop">@dimen/SubTextMarginTop</item>
+
+    </style>
+
+    <style name="ConditionIcon">
+        <item name="android:layout_width">@dimen/ConditionIconSize</item>
+        <item name="android:layout_height">@dimen/ConditionIconSize</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="LastUpdated">
+        <item name="android:textSize">@dimen/LastUpdatedTextSize</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/LastUpdatedPadding</item>
+        <item name="android:visibility">visible</item>
+        <item name="android:textColor">@color/textColor</item>
+    </style>
+
+    <style name="forecastSubText">
+        <item name="android:textSize">@dimen/forecastSubTextSize</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textColor</item>
+    </style>
+
+
+</resources>

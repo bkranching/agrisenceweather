@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/FragmentMainLayout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/infoLayout"
+        android:gravity="center"
+        android:visibility="gone">
+        <ImageView
+            android:id="@+id/infoImg"
+            android:src="@drawable/no_location"
+            style="@style/infoImage" />
+        <TextView
+            android:id="@+id/infoTxt"
+            style="@style/InfoText"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/progressLinearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <ProgressBar
+            android:id="@+id/progressBarPlaces"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </ProgressBar>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearViewDaily"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        >
+
+        <TextView
+            android:id="@+id/infoString"
+            android:text="Weather Forecast"
+            android:paddingLeft="5dp"
+            style="@style/TitleText"
+            android:layout_marginBottom="5dp"/>
+
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/forecast_recyclerview"
+                android:layout_below="@+id/infoString"
+                android:scrollbars="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                tools:listitem="@layout/forecast_cardview"
+                />
+
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+
+
+

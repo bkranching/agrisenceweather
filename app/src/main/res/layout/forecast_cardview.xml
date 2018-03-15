@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/listcard"
+    android:layout_marginBottom="@dimen/cardViewMarginBottom"
+    card_view:cardCornerRadius="5dp"
+    >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/forcastLinearLayoutPadding"
+        android:weightSum="13"
+        >
+        <TextView
+            android:id="@+id/dailytime"
+            android:layout_weight="4"
+            style="@style/forecastSubText"
+           />
+        <ImageView
+            android:layout_width="@dimen/forcastImageSize"
+            android:layout_height="@dimen/forcastImageSize"
+            android:id="@+id/dailyImage"
+            android:scaleType="centerCrop"
+            />
+        <TextView
+
+            android:id="@+id/dailydescription"
+            android:layout_marginLeft="5dp"
+            style="@style/forecastSubText"
+            android:layout_weight="6.5"
+
+            />
+        <TextView
+            android:layout_weight="3"
+            android:id="@+id/dailytemp"
+            style="@style/forecastSubText"
+
+            />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    style="@style/FragmentMainLayout">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/noLocationLayout"
+        android:gravity="center"
+        android:visibility="gone">
+        <ImageView
+            android:id="@+id/infoImg"
+            android:src="@drawable/no_location"
+            style="@style/infoImage" />
+        <TextView
+            android:id="@+id/infoTxt"
+            style="@style/InfoText"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/progressLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <ProgressBar
+            android:id="@+id/progressBarPlaces"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </ProgressBar>
+    </LinearLayout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearViewNow"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            >
+
+
+            <TextView
+                android:id="@+id/titleString"
+                style="@style/TitleText"
+                android:paddingLeft="@dimen/TitleTextPadding"
+                />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/detailCard"
+                android:layout_below="@+id/titleString"
+                android:layout_marginTop="5dp"
+                android:background="#FFFFFF"
+                card_view:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:id="@+id/relView1"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/description"
+                        style="@style/SubText"
+                        android:padding="@dimen/SubTextPaddingLeft"/>
+
+                    <ImageView
+                        android:id="@+id/condIcon"
+                        style="@style/ConditionIcon"
+                        android:layout_below="@+id/description"
+                        />
+                    <TextView
+                        style="@style/TitleText"
+                        android:text="Weather Detail"
+                        android:id="@+id/detail"
+                        android:layout_below="@+id/condIcon"
+                        android:layout_alignParentStart="true"
+                        android:paddingLeft="@dimen/TitleTextPadding"
+                        android:layout_marginTop="10dp"
+                        />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorAccent"
+                        android:layout_below="@+id/detail"
+                        android:layout_marginTop="2dp"
+                        android:id="@+id/view"
+                        />
+                    <TextView
+                        style="@style/SubText"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/tempValue"
+                        android:layout_below="@+id/view"
+                        />
+                    <TextView
+                        style="@style/SubText"
+                        android:id="@+id/pressureValue"
+                        android:layout_below="@+id/tempValue"
+                        android:layout_alignStart="@+id/tempValue"
+                        />
+                        />
+                    <TextView
+                        style="@style/SubText"
+                        android:id="@+id/humidityValue"
+                        android:layout_below="@+id/pressureValue"
+                        android:layout_alignStart="@+id/tempValue"
+                        />
+                    <TextView
+                        style="@style/SubText"
+                        android:id="@+id/windSpeedValue"
+                        android:layout_below="@+id/humidityValue"
+                        android:layout_alignStart="@+id/tempValue"
+                        />
+
+                    <TextView
+                        style="@style/SubText"
+                        android:id="@+id/windDegreeValue"
+                        android:layout_below="@+id/windSpeedValue"
+                        android:layout_alignStart="@+id/tempValue"
+                        />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:id="@+id/lastUpdated"
+                android:layout_below="@+id/detailCard"
+                style="@style/LastUpdated" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

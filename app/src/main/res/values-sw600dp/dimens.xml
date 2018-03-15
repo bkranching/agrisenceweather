@@ -1,0 +1,16 @@
+<resources>
+    <dimen name="InfoIconSize">80dp</dimen>
+    <dimen name="InfoTextSize">16sp</dimen>
+    <dimen name="TitleTextSize">25sp</dimen>
+    <dimen name="TitleTextPadding">15dp</dimen>
+    <dimen name="SubTextSize">23sp</dimen>
+    <dimen name="ConditionIconSize">120dp</dimen>
+    <dimen name="SubTextPaddingLeft">10dp</dimen>
+    <dimen name="SubTextMarginTop">20dp</dimen>
+    <dimen name="LastUpdatedPadding">10dp</dimen>
+    <dimen name="LastUpdatedTextSize">18sp</dimen>
+    <dimen name="cardViewMarginBottom">6dp</dimen>
+    <dimen name="forcastImageSize">45dp</dimen>
+    <dimen name="forcastLinearLayoutPadding">10dp</dimen>
+    <dimen name="forecastSubTextSize">22sp</dimen>
+</resources>

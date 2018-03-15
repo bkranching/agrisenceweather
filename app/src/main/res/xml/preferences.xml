@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:title="Application Updates"
+        android:defaultValue="false"
+        android:summary="This option if selected will allow the application to check for latest versions."
+        android:key="applicationUpdates" />
+    <ListPreference android:title="Units"
+        android:summary="This option will allow you to choose between metric and imperial units."
+        android:key="units"
+        android:defaultValue="metric"
+        android:entries="@array/unitlistArray"
+        android:entryValues="@array/unitlistValues" />
+    <ListPreference android:title="Update interval"
+        android:summary="Select interval to update weather data"
+        android:key="updateData"
+        android:defaultValue="24"
+        android:entries="@array/listArray"
+        android:entryValues="@array/listValues" />
+</PreferenceScreen>

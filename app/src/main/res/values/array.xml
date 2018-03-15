@@ -1,0 +1,30 @@
+<resources>
+<string-array name="listArray">
+    <item>Every 1 hour</item>
+    <item>Every 2 hours</item>
+    <item>Every 6 hours</item>
+    <item>Every 12 housr</item>
+    <item>Every 24 hour</item>
+
+</string-array>
+
+<string-array name="listValues">
+    <item>1</item>
+    <item>2</item>
+    <item>6</item>
+    <item>12</item>
+    <item>24</item>
+</string-array>
+
+    <string-array name="unitlistArray">
+        <item>Metric</item>
+        <item>Imperial</item>
+
+    </string-array>
+
+    <string-array name="unitlistValues">
+        <item>metric</item>
+        <item>imperial</item>
+
+    </string-array>
+</resources>
